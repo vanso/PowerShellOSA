@@ -196,10 +196,10 @@ tell application "PowerShellOSA"
 					for ($n = 0; $n -lt $Count; $n++) 
 					{
   						# Calculate the approximation using the simplified Binet's Formula: Phi^n / sqrt(5)
-    						$approximation = ([Math]::Pow($phi, $n) / $sqrt5)
+    					$approximation = ([Math]::Pow($phi, $n) / $sqrt5)
     
-    						# Round the approximation to the nearest integer and cast to a 64-bit integer ([int64])
-    						Write-Output $([int64][Math]::Round($approximation))
+						# Round the approximation to the nearest integer and cast to a 64-bit integer ([int64])
+						Write-Output $([int64][Math]::Round($approximation))
 					}" with parameters 42
 end tell
 ```
