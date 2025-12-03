@@ -168,9 +168,9 @@ Invoke-AppleScriptObjC @'
 | Write-Host | ⚠️ | 
 | Read-Host | ⚠️ | 
 | Get-Credential | ✅ | 
-| Confirm | ❌ | 
-| ShouldProcess | ❌ | 
-| ShouldContinue | ❌ | 
+| Confirm | ✅ | 
+| ShouldProcess | ✅ | 
+| ShouldContinue | ✅ | 
 | PromptForChoice | ✅ | 
 
 Use the functions provided by the [PSMacToolkit](https://github.com/vanso/PSMacToolkit) PowerShell module for user interaction instead.
