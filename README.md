@@ -15,7 +15,7 @@ This module enables seamless **interoperability between the Open Scripting Archi
 ## Installation
 
 ```powershell
-PS> Install-Module -Name PowerShellOSA (coming soon)
+PS> Install-Module -Name PowerShellOSA
 ```
 
 ## Available Functions in the Module
