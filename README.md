@@ -149,43 +149,13 @@ Invoke-AppleScriptObjC @'
 
 <img width="2142" height="2198" alt="dico" src="https://github.com/user-attachments/assets/44d77975-0471-4b4f-93fa-2560c6d581d5" />
 
-### Supported Output Streams
-
-| **Stream** #             | **Description** | **Write Cmdlet** | **Supported** |
-|:------------------------:|:-------------|:--------|:----:|
-| 1	  | Success stream	   | 	Write-Output | ✅ | 
-| 2   | Error stream	   | 	Write-Error | ✅ | 
-| 3	  | Warning stream	   | 	Write-Warning | ✅ | 
-| 4	  | Verbose stream	   | 	Write-Verbose | ✅ | 
-| 5	  | Debug stream	   | 	Write-Debug | ✅ | 
-| 6	  | Information stream | 	Write-Information | ❌ | 
-| n/a | Progress stream    | 	Write-Progress | ⚠️ (The progress bar is limited to one level.)| 
-
-### User Interaction Utilities
-
-| **Command** | **Supported** |
-|:--------|:----:|
-| Write-Host | ⚠️ | 
-| Read-Host | ⚠️ | 
-| Get-Credential | ✅ | 
-| Confirm | ✅ | 
-| ShouldProcess | ✅ | 
-| ShouldContinue | ✅ | 
-| PromptForChoice | ✅ | 
-
-Use the functions provided by the [PSMacToolkit](https://github.com/vanso/PSMacToolkit) PowerShell module for user interaction instead.
-
-✅ Full support<br />
-⚠️ Partial support<br />
-❌ Not supported
-
 ### Usage
 
 ```applescript
 tell application "PowerShellOSA"
 	
 	do pwsh script "Param(
- 					   [int]$Count = 10  # Number of Fibonacci terms to calculate (starting from F0)
+ 					   [int]$Count = 10  # Number of Fibonacci terms to calculate (starting from 0)
 					)
 
 					# --- Define Constants for Binet's Formula ---
@@ -228,6 +198,36 @@ tell application "PowerShellOSA"
 					" with input {1, 2, 3}
 end tell
 ```
+
+### Supported Output Streams
+
+| **Stream** #             | **Description** | **Write Cmdlet** | **Supported** |
+|:------------------------:|:-------------|:--------|:----:|
+| 1	  | Success stream	   | 	Write-Output | ✅ | 
+| 2   | Error stream	   | 	Write-Error | ✅ | 
+| 3	  | Warning stream	   | 	Write-Warning | ✅ | 
+| 4	  | Verbose stream	   | 	Write-Verbose | ✅ | 
+| 5	  | Debug stream	   | 	Write-Debug | ✅ | 
+| 6	  | Information stream | 	Write-Information | ❌ | 
+| n/a | Progress stream    | 	Write-Progress | ⚠️ (The progress bar is limited to one level.)| 
+
+### User Interaction Utilities
+
+| **Command** | **Supported** |
+|:--------|:----:|
+| Write-Host | ⚠️ | 
+| Read-Host | ⚠️ | 
+| Get-Credential | ✅ | 
+| Confirm | ✅ | 
+| ShouldProcess | ✅ | 
+| ShouldContinue | ✅ | 
+| PromptForChoice | ✅ | 
+
+Use the functions provided by the [PSMacToolkit](https://github.com/vanso/PSMacToolkit) PowerShell module for user interaction instead.
+
+✅ Full support<br />
+⚠️ Partial support<br />
+❌ Not supported
 
 ## License
 
