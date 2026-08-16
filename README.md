@@ -41,8 +41,8 @@ PS> Install-Module -Name PowerShellOSA
 | missing value |$null| 
 | boolean |[Boolean]| 
 | text |[String]| 
-| integer | [[SByte, Byte, UInt16, Int16, UInt32, Int32, UInt64, Int64, UIntPtr, IntPtr, Numerics.BigInteger]](https://learn.microsoft.com/en-us/dotnet/standard/numerics#integer-types) | 
-| real  | [[Single, Double, Decimal]](https://learn.microsoft.com/en-us/dotnet/standard/numerics#floating-point-types). The Half, UInt128, Int128 types aren't supported. | 
+| integer | [[SByte, Byte, UInt16, Int16, UInt32, Int32, UInt64, Int64, UIntPtr, IntPtr, Numerics.BigInteger]](https://learn.microsoft.com/en-us/dotnet/standard/numerics#integer-types) UInt128 and Int128 types aren't supported. | 
+| real  | [[Single, Double, Decimal]](https://learn.microsoft.com/en-us/dotnet/standard/numerics#floating-point-types). The Half type isn't supported. | 
 | date | [DateTime] |
 | file | [Uri] (Input) / [String] (Output)|
 | alias | [String] (Output)|
